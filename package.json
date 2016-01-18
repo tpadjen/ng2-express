@@ -26,7 +26,9 @@
     "zone.js": "^0.5.10"
   },
   "devDependencies": {
+    "connect-livereload": "^0.5.4",
     "gulp": "^3.9.0",
+    "gulp-live-server": "0.0.29",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-typescript": "^2.10.0"
   }

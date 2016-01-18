@@ -2,6 +2,7 @@ var path       = require('path');
 var gulp       = require('gulp');
 var ts         = require('gulp-typescript');
 var sourcemaps = require('gulp-sourcemaps');
+var gls        = require('gulp-live-server');
 
 
 var buildDest = function(loc) {
@@ -27,3 +28,24 @@ gulp.task('watch', function() {
     gulp.watch('client/**/*.ts', ['build:client']);
     gulp.watch('server/**/*.ts', ['build:server']);
 });
+
+gulp.task('serve', ['watch'], function() {
+  var server = gls.new('server/app.js');
+  server.start();
+
+  // watch css, html, and js
+  gulp.watch([
+    'client/**/*.css', 
+    'client/**/*.html', 
+    'client/**/*.js'
+  ], 
+  function(file) {
+    console.log("\nChanged: " + file.path);
+    console.log("Reloading server\n");
+    server.notify.apply(server, [file]);
+  });
+
+  // restart server on change
+  gulp.watch('server/app.js', server.start.bind(server));
+
+})
