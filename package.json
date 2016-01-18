@@ -4,6 +4,7 @@
   "description": "Angular 2 front-end && Express back-end",
   "main": "server/app.js",
   "scripts": {
+    "start": "node server/app.js",
     "ts:server": "tsc -p server",
     "watch:server": "tsc -p server -w",
     "test": "echo \"Error: no test specified\" && exit 1"
