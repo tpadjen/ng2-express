@@ -4,7 +4,7 @@
   "description": "Angular 2 front-end && Express back-end",
   "main": "server/app.js",
   "scripts": {
-    "start": "node server/app.js",
+    "start": "gulp serve",
     "ts:client": "tsc -p client",
     "ts:server": "tsc -p server",
     "ts": "npm run ts:client && npm run ts:server",
