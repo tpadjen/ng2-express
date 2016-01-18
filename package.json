@@ -5,8 +5,12 @@
   "main": "server/app.js",
   "scripts": {
     "start": "node server/app.js",
+    "ts:client": "tsc -p client",
     "ts:server": "tsc -p server",
+    "ts": "npm run ts:client && npm run ts:server",
+    "watch:client": "tsc -p client -w",
     "watch:server": "tsc -p server -w",
+    "watch": "npm run watch:client & npm run watch:server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Tim Padjen",
