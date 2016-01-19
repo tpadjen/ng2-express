@@ -1,9 +1,0 @@
-/// <reference path="../config/typings/tsd.d.ts" />
-describe('Home page', function () {
-    it('should say the app name', function () {
-        browser.get('/');
-        expect(element(by.css('app h1')).getText()).toEqual('App');
-    });
-});
-
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhvbWUuZTJlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLG1EQUFtRDtBQUVuRCxRQUFRLENBQUMsV0FBVyxFQUFFO0lBRWxCLEVBQUUsQ0FBQyx5QkFBeUIsRUFBRTtRQUMxQixPQUFPLENBQUMsR0FBRyxDQUFDLEdBQUcsQ0FBQyxDQUFDO1FBRWpCLE1BQU0sQ0FBQyxPQUFPLENBQUMsRUFBRSxDQUFDLEdBQUcsQ0FBQyxRQUFRLENBQUMsQ0FBQyxDQUFDLE9BQU8sRUFBRSxDQUFDLENBQUMsT0FBTyxDQUFDLEtBQUssQ0FBQyxDQUFDO0lBQy9ELENBQUMsQ0FBQyxDQUFDO0FBRVAsQ0FBQyxDQUFDLENBQUMiLCJmaWxlIjoiaG9tZS5lMmUuanMiLCJzb3VyY2VzQ29udGVudCI6WyIvLy8gPHJlZmVyZW5jZSBwYXRoPVwiLi4vY29uZmlnL3R5cGluZ3MvdHNkLmQudHNcIiAvPlxuXG5kZXNjcmliZSgnSG9tZSBwYWdlJywgKCkgPT4ge1xuXG4gICAgaXQoJ3Nob3VsZCBzYXkgdGhlIGFwcCBuYW1lJywgKCkgPT4ge1xuICAgICAgICBicm93c2VyLmdldCgnLycpO1xuXG4gICAgICAgIGV4cGVjdChlbGVtZW50KGJ5LmNzcygnYXBwIGgxJykpLmdldFRleHQoKSkudG9FcXVhbCgnQXBwJyk7XG4gICAgfSk7XG5cbn0pOyJdLCJzb3VyY2VSb290IjoiL3NvdXJjZS8ifQ==
