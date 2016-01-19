@@ -31,7 +31,7 @@ gulp.task('watch', () => {
 });
 
 gulp.task('serve', ['watch'], () => {
-  var server = gls.new('server/app.js');
+  var server = gls.new('server/server.js');
   server.start();
 
   // watch css, html, and js
@@ -47,6 +47,6 @@ gulp.task('serve', ['watch'], () => {
   });
 
   // restart server on change
-  gulp.watch('server/app.js', server.start.bind(server));
+  gulp.watch('server/server.js', server.start.bind(server));
 
 })
