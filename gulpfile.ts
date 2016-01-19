@@ -49,4 +49,7 @@ gulp.task('serve', ['watch'], () => {
   // restart server on change
   gulp.watch('server/server.js', server.start.bind(server));
 
-})
+});
+
+gulp.task('default', ['serve']);
+

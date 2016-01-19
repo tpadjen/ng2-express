@@ -4,7 +4,7 @@
   "description": "Angular 2 front-end && Express back-end",
   "main": "server/app.js",
   "scripts": {
-    "start": "gulp serve",
+    "start": "gulp",
     "test": "karma start"
   },
   "author": "Tim Padjen",
