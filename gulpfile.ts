@@ -14,14 +14,15 @@ var buildDest = (loc, tsProject) => {
         .pipe(gulp.dest(path.resolve(loc)));
 }
 
+var serverTS = ts.createProject('tsconfig.json');
+var clientTS = ts.createProject('tsconfig.json', client.tsConfig);
+
 gulp.task('build:server', () => {
-    var tsProject = ts.createProject('tsconfig.json');
-    return buildDest('server', tsProject);
+    return buildDest('server', serverTS);
 });
 
 gulp.task('build:client', () => {
-    var tsProject = ts.createProject('tsconfig.json', client.tsConfig);
-    return buildDest('client', tsProject);
+    return buildDest('client', clientTS);
 });
 
 gulp.task('watch', () => {
