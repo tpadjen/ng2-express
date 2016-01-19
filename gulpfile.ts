@@ -16,6 +16,7 @@ var buildDest = (loc, tsProject) => {
 
 var serverTS = ts.createProject('tsconfig.json');
 var clientTS = ts.createProject('tsconfig.json', client.tsConfig);
+var e2eTS    = ts.createProject('tsconfig.json');
 
 gulp.task('build:server', () => {
     return buildDest('server', serverTS);
@@ -23,6 +24,10 @@ gulp.task('build:server', () => {
 
 gulp.task('build:client', () => {
     return buildDest('client', clientTS);
+});
+
+gulp.task('build:e2e', () => {
+    return buildDest('e2e', e2eTS);
 });
 
 gulp.task('watch', () => {

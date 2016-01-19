@@ -2,7 +2,7 @@
   "version": "v4",
   "repo": "borisyankov/DefinitelyTyped",
   "ref": "master",
-  "path": "typings",
+  "path": "config/typings",
   "bundle": "config/typings/tsd.d.ts",
   "installed": {
     "gulp/gulp.d.ts": {
@@ -30,6 +30,15 @@
       "commit": "70bf7e2bfeb0d5b1b651ef3219bcc65c8eec117e"
     },
     "express/express.d.ts": {
+      "commit": "70bf7e2bfeb0d5b1b651ef3219bcc65c8eec117e"
+    },
+    "jasmine/jasmine.d.ts": {
+      "commit": "70bf7e2bfeb0d5b1b651ef3219bcc65c8eec117e"
+    },
+    "angular-protractor/angular-protractor.d.ts": {
+      "commit": "70bf7e2bfeb0d5b1b651ef3219bcc65c8eec117e"
+    },
+    "selenium-webdriver/selenium-webdriver.d.ts": {
       "commit": "70bf7e2bfeb0d5b1b651ef3219bcc65c8eec117e"
     }
   }
