@@ -6,5 +6,7 @@
 /client/**/*.js
 /client/**/*.js.map
 
+/client/**/*.js
+
 *.sublime-project
 *.sublime-workspace
