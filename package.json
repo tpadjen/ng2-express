@@ -5,13 +5,6 @@
   "main": "server/app.js",
   "scripts": {
     "start": "gulp serve",
-    "ts:client": "tsc -p client",
-    "ts:server": "tsc -p server",
-    "ts": "npm run ts:client && npm run ts:server",
-    "watch:client": "tsc -p client -w",
-    "watch:server": "tsc -p server -w",
-    "watch": "npm run watch:client & npm run watch:server",
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Tim Padjen",
   "license": "ISC",
@@ -31,5 +24,7 @@
     "gulp-live-server": "0.0.29",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-typescript": "^2.10.0"
+    "ts-node": "^0.5.5",
+    "tsd": "^0.6.5"
   }
 }
