@@ -5,6 +5,7 @@
   "main": "server/app.js",
   "scripts": {
     "start": "gulp serve",
+    "test": "karma start"
   },
   "author": "Tim Padjen",
   "license": "ISC",
@@ -20,10 +21,17 @@
   },
   "devDependencies": {
     "connect-livereload": "^0.5.4",
+    "es6-module-loader": "^0.17.10",
     "gulp": "^3.9.0",
     "gulp-live-server": "0.0.29",
     "gulp-sourcemaps": "^1.6.0",
-    "gulp-typescript": "^2.10.0"
+    "gulp-typescript": "^2.10.0",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.19",
+    "karma-jasmine": "^0.3.6",
+    "karma-phantomjs2-launcher": "^0.4.0",
+    "phantomjs": "^1.9.19",
+    "traceur": "0.0.96",
     "ts-node": "^0.5.5",
     "tsd": "^0.6.5"
   }
