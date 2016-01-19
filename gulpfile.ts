@@ -3,7 +3,7 @@ import * as gulp from 'gulp';
 import * as ts from 'gulp-typescript';
 import * as sourcemaps from 'gulp-sourcemaps';
 var gls = require('gulp-live-server');
-
+var client = require('./config/client.json');
 
 var buildDest = (loc, tsProject) => {
     return gulp.src(path.resolve(loc, '**/*.ts'))
@@ -20,7 +20,7 @@ gulp.task('build:server', () => {
 });
 
 gulp.task('build:client', () => {
-    var tsProject = ts.createProject(path.resolve('client', 'tsconfig.json'));
+    var tsProject = ts.createProject('tsconfig.json', client.tsConfig);
     return buildDest('client', tsProject);
 });
 
